@@ -1,0 +1,13 @@
+.shopping{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(86, 111, 103) ;  
+    margin:-8px;
+}
+.items{
+    border: 2px solid black;
+    padding: 10px;
+    background-color:bisque ;
+}

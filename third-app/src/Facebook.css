@@ -1,0 +1,76 @@
+/* Facebook.css */
+
+.facebook {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.facebook .thumbnail {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facebook .thumbnail h1 {
+    color: #1877f2;
+    font-size: 36px;
+    margin: 0;
+}
+
+.facebook form {
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook form p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1c1e21;
+}
+
+.facebook input[type="text"],
+.facebook input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.facebook input[type="text"]:focus,
+.facebook input[type="password"]:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+}
+
+.facebook button {
+    background-color: #1877f2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.facebook button:hover {
+    background-color: #165ecc;
+}
+
+.facebook a {
+    margin-top: 10px;
+    text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.facebook a:hover {
+    text-decoration: underline;
+}

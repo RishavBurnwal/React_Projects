@@ -1,0 +1,6 @@
+.items {
+    border: 2px solid black;
+    height: 600px;
+    width: 200px;
+    display: inline-block;
+}

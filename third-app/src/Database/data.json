@@ -1,0 +1,19 @@
+    {
+        "Admin" :[
+            {
+                "id" : 101,
+                "name" : "abcd@gmail.com",
+                "password" : "12345"
+            },
+            {
+                "id" : 102,
+                "name" : "xyz@gmail.com",
+                "password" : "09876"
+            },
+            {
+                "id" : 103,
+                "name" : "pqr@gmail.com",
+                "password" : "65456"
+            }
+        ]
+    }
