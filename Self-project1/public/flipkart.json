@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15",
+    "model": "128GB Blue",
+    "image": "https://m.media-amazon.com/images/I/81zLNgcvlaL._SL1500_.jpg",
+    "price": "₹79,999",
+    "rating": 4.6
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "model": "256GB Black",
+    "image": "https://m.media-amazon.com/images/I/71Sa3dqTqzL._SL1500_.jpg",
+    "price": "₹74,999",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "OnePlus 11R",
+    "model": "128GB Green",
+    "image": "https://m.media-amazon.com/images/I/613SAOPmLeL.jpg",
+    "price": "₹39,999",
+    "rating": 4.3
+  },
+  {
+    "id": 4,
+    "name": "Redmi Note 13 Pro",
+    "model": "8GB RAM + 256GB",
+    "image": "https://gsmphone.co/wp-content/uploads/2024/01/ASSET_MMS_135510428.jpeg",
+    "price": "₹24,999",
+    "rating": 4.1
+  },
+  {
+    "id": 5,
+    "name": "Realme Narzo 60x",
+    "model": "128GB Silver",
+    "image": "https://cdn.kalvo.com/uploads/img/gallery/55103-realme-narzo-60x-3.jpg",
+    "price": "₹17,499",
+    "rating": 4.0
+  }
+]

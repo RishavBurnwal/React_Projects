@@ -1,0 +1,11 @@
+.card {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  /* object-fit: contain; */
+}
