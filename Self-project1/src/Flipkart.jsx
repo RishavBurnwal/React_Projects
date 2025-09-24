@@ -10,8 +10,7 @@ function Flipkart() {
       .then((data) => setItems(data));
   }, []);
 
-  return (
-    <>    
+  return (   
     <div>
       <h1>Flipkart Products</h1>
       <div>
@@ -26,7 +25,6 @@ function Flipkart() {
         ))}
       </div>
     </div>
-    </>
 
   );
 }
