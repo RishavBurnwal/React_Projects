@@ -1,0 +1,99 @@
+{
+    "bus" : [
+        {
+            "id" : 101,
+            "from" : "Durgapur",
+            "to" : "Kolkata",
+            "date" : "26-09-2025",
+            "name" : "Shyamoli",
+            "Seat" : 12,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 800.0,
+            "description" : "With Shyamoli Paribahan, you can tour your favorite places with luxury, equipped with the best amenities. To utilize all of our services, make reservation."
+        },
+
+        {
+            "id" : 102,
+            "from" : "Asansol",
+            "to" : "Bakura",
+            "date" : "27-10-2025",
+            "name" : "Raj Lakshmi",
+            "Seat" : 34,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 450.0,
+            "description" : "With Shyamoli Paribahan, you can tour your favorite places with luxury, equipped with the best amenities. To utilize all of our services, make reservation."
+        },
+
+        {
+            "id" : 103,
+            "from" : "Kolkata",
+            "to" : "Banaras",
+            "date" : "05-10-2025",
+            "name" : "Volvo",
+            "Seat" : 54,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 1800.0,
+            "description" : "Volvo Buses offers complete solutions for various transportation needs, including long-distance, intercity, and urban travel."
+        },
+
+        {
+            "id" : 104,
+            "from" : "Ranchi",
+            "to" : "Delhi",
+            "date" : "22-11-2025",
+            "name" : "Prince-buses",
+            "Seat" : 45,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 2499.0,
+            "description" : "With Shyamoli Paribahan, you can tour your favorite places with luxury, equipped with the best amenities. To utilize all of our services, make reservation."
+        },
+
+        {
+            "id" : 105,
+            "from" : "Banglore",
+            "to" : "Mysoor",
+            "date" : "30-10-2025",
+            "name" : "BMTC",
+            "Seat" : 46,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 2000.0,
+            "description" : "The Bengaluru Metropolitan Transport Corporation is the sole public bus transport provider for Bengaluru, serving urban, sub-urban and rural areas."
+        },
+
+        {
+            "id" : 106,
+            "from" : "Banglore",
+            "to" : "Pune",
+            "date" : "29-09-2025",
+            "name" : "BMTC",
+            "Seat" : 34,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 1700.0,
+            "description" : "The Bengaluru Metropolitan Transport Corporation is the sole public bus transport provider for Bengaluru, serving urban, sub-urban and rural areas."
+        },
+
+        {
+            "id" : 107,
+            "from" : "Mumbai",
+            "to" : "Kochi",
+            "date" : "12-10-2025",
+            "name" : "Volvo",
+            "Seat" : 26,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 1500.0,
+            "description" : "Volvo Buses offers complete solutions for various transportation needs, including long-distance, intercity, and urban travel."
+        },
+
+        {
+            "id" : 108,
+            "from" : "Howrah",
+            "to" : "Dhanbad",
+            "date" : "02-11-2025",
+            "name" : "Shyamoli",
+            "Seat" : 62,
+            "image" : "https://5.imimg.com/data5/SELLER/Default/2025/5/515246579/OD/MO/VZ/195676118/ac-bus-new-deluxe-sleeper-coach-bus-body.jpeg",
+            "price" : 600.0,
+            "description" : "With Shyamoli Paribahan, you can tour your favorite places with luxury, equipped with the best amenities. To utilize all of our services, make reservation."
+        }
+    ]
+}
