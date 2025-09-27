@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import AdminLogin from './AdminLogin'
-import LandingPage from './LandingPage'
-import UserLogin from './UserLogin'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import AdminLogin from './AdminLogin';
+import LandingPage from './LandingPage';
+import UserLogin from './UserLogin';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (

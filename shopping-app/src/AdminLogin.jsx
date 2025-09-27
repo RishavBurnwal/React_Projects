@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import './AdminLogin.css'
-import { toast } from 'react-toastify'
+import React, { useState } from 'react';
+import './AdminLogin.css';
+import { toast } from 'react-toastify';
 
 function AdminLogin() {
   let [email, setEmail] = useState("")
