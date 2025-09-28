@@ -10,3 +10,21 @@ body {
   background: #f6f8fb;
   color: #0f172a;
 }
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2563eb;
+}
+
+/* Container for all items */
+.items {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  padding: 16px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
