@@ -59,3 +59,10 @@ h1 {
   display: block;
   margin-bottom: 6px;
 }
+
+.items {
+    border: 2px solid black;
+    height: 600px;
+    width: 200px;
+    display: inline-block;
+}
