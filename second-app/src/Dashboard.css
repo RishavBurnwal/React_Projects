@@ -28,3 +28,24 @@ h1 {
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.items:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.items img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Item name */
+.items h1 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #111827;
+}
