@@ -1,0 +1,14 @@
+{
+  "Admins": [
+    {
+      "id": "2de0",
+      "U_name": "Rishav Burnwal",
+      "email": "abcd@gmail.com",
+      "password": "1234",
+      "re_password": "1234",
+      "phone": "1234567890",
+      "age": "23",
+      "Profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Fettjl2rGDjHBlCYCXcWMRAoKDr_AQOoXQ&s"
+    }
+  ]
+}

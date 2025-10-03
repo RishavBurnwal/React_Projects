@@ -1,0 +1,82 @@
+.AdminSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  font-family: Arial, sans-serif;
+}
+
+.AdminSign form {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.AdminSign form label {
+  margin: 12px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.AdminSign form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.AdminSign form input:focus {
+  border-color: #ff7b54;
+  box-shadow: 0 0 6px rgba(255, 123, 84, 0.4);
+}
+
+.AdminSign form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7b54;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.AdminSign form button:hover {
+  background: #e06743;
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thumbnail img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff7b54;
+}
+
+/* Make sure html and body take full height and remove default margins */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make AdminSign take full width */
+.AdminSign {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}

@@ -1,0 +1,27 @@
+.add-products {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.add-products .details {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.add-products form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-products input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,47 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between; /* space between logo, search, profile */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* dark background */
+  color: white;
+}
+
+/* Logo */
+.Navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.Navbar .logo span {
+  color: #ff9800; /* highlight */
+}
+
+/* Search section */
+.Navbar .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Navbar .search input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Links */
+.Navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.Navbar a:hover {
+  color: #ff9800;
+}
+
+/* Profile section */
+.Navbar .Profile {
+  margin-left: 20px;
+}

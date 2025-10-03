@@ -1,0 +1,24 @@
+.AdminHomePage {
+  display: flex;
+  flex-direction: column;  /* Navbar at top, content below */
+  min-height: 100vh;
+  background: #f4f6f9; /* light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar should stay at top */
+.AdminHomePage > .Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Routed content styling */
+.AdminHomePage .content {
+  flex: 1; 
+  padding: 20px;
+}
+
+.AdminHomePage{
+    width: 100vw;
+}
