@@ -1,3 +1,15 @@
 {
-    "Objects":[]
+  "Objects": [
+    {
+      "id": "0cde",
+      "Obj_name": "IQOO Z9 5g",
+      "category": "Phone",
+      "brand": "Vivo",
+      "price": "20000.0",
+      "desc": "It is an android phone with multiple features.",
+      "image": "https://m.media-amazon.com/images/I/61pt59LW-lL.jpg",
+      "stock": "109",
+      "ratings": "4.3"
+    }
+  ]
 }

@@ -1,72 +1,85 @@
-import React from 'react'
-import '../Styles/AddProducts.css'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../Styles/AddProducts.css';
 
 function AddProducts() {
+  let [object, setObjects] = useState({
+    Obj_name: "",
+    category: "",
+    brand: "",
+    price: "",
+    desc: "",
+    image: "",
+    stock: "",
+    ratings: ""
+  });
 
-    let[object, setObjects] = useState({
-        Obj_name: "",
-        category: "",
-        brand: "",
-        price: "",
-        desc: "",
-        image: "",
-        stock: "",
-        rating: ""
-    })
-    function handleChange(e){
-      let {name, value} = e.target;
-      setObjects((prevState)=>({
-        ...prevState,
-        [name] : value
-      }))
-    }
+  function handleChange(e) {
+    let { name, value } = e.target;
+    setObjects((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  }
 
-    function product_details(e){
-      e.preventDefault();
-        axios.post("http://localhost:1000/Admins",object)
-        .then((res)=>{
-            console.log(res);
-            toast.success("Product Added Successfully")
-        })
-        .catch((err)=>{
-            console.log(err);
-            toast.error("Invalid Product")
-        })
-    }
+  function product_details(e) {
+    e.preventDefault();
+    axios.post("http://localhost:3001/Objects", object)
+      .then((res) => {
+        console.log(res);
+        toast.success("Product Added Successfully");
+        setObjects({
+          Obj_name: "",
+          category: "",
+          brand: "",
+          price: "",
+          desc: "",
+          image: "",
+          stock: "",
+          ratings: ""
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Invalid Product");
+      });
+  }
 
   return (
     <div className='add-products'>
       <div className='details'>
-        <form onSubmit={product_details} action="">
-        <label htmlFor="">Name : </label>
-        <input onChange={handleChange} type="text" placeholder='Enter Product name' required />
+        <form onSubmit={product_details}>
+          <label>Name:</label>
+          <input value={object.Obj_name} name='Obj_name' onChange={handleChange} type="text" placeholder='Enter Product name' required />
 
-        <label htmlFor="">Category :</label>
-        <input type="text" placeholder='Enter Product category' required />
+          <label>Category:</label>
+          <input value={object.category} name='category' onChange={handleChange} type="text" placeholder='Enter Product category' required />
 
-        <label htmlFor="">Brand :</label>
-        <input type="text" placeholder='Enter Product Brand' required />
+          <label>Brand:</label>
+          <input value={object.brand} name='brand' onChange={handleChange} type="text" placeholder='Enter Product Brand' required />
 
-        <label htmlFor="">Price :</label>
-        <input type="number" placeholder='Enter Product Price' required />
+          <label>Price:</label>
+          <input value={object.price} name='price' onChange={handleChange} type="number" placeholder='Enter Product Price' required />
 
-        <label htmlFor="">Desc :</label>
-        <input type="text" placeholder='Enter Product Description' required />
+          <label>Description:</label>
+          <input value={object.desc} name='desc' onChange={handleChange} type="text" placeholder='Enter Product Description' required />
 
-        <label htmlFor="">Image :</label>
-        <input type="url" placeholder='Enter Product Image' required />
+          <label>Image URL:</label>
+          <input value={object.image} name='image' onChange={handleChange} type="url" placeholder='Enter Product Image' required />
 
-        <label htmlFor="">Stock :</label>
-        <input type="number" placeholder='Enter Product Stock' required />
-        
-        <label htmlFor="">Ratings</label>
-        <input type="text" placeholder='Enter Product ratings' required />
+          <label>Stock:</label>
+          <input value={object.stock} name='stock' onChange={handleChange} type="number" placeholder='Enter Product Stock' required />
 
-      </form>
+          <label>Ratings:</label>
+          <input value={object.ratings} name='ratings' onChange={handleChange} type="text" placeholder='Enter Product Ratings' required />
+
+          <button type='submit'>Add Product</button>
+        </form>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default AddProducts
+export default AddProducts;

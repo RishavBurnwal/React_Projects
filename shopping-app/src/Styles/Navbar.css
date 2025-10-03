@@ -1,4 +1,17 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between; /* space between logo, search, profile */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* dark background */
+  color: white;
+}
 
+/* Logo */
+.Navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
 
 .Navbar .logo span {
   color: #ff9800; /* highlight */
