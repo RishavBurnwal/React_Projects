@@ -10,7 +10,7 @@ function Navbar() {
             <h1>SHop<span>py</span></h1>
         </div>
         <div className="search">
-            <input type="text" placeholder='enter the name of fachion,electronics,accessories,etc...' />
+            <input type="text" placeholder='enter the name of fashion,electronics,accessories,etc...' />
             <button className='btn btn-outline-primary py-1' >Search</button>
             <Link to="/admin-HomePage/add-products">Add Products</Link>
         </div>
