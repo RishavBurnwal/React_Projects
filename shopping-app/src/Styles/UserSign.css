@@ -1,4 +1,4 @@
-/* UserLogin.css */
+/* UserSign.css */
 
 html, body {
   height: 100%;
@@ -8,7 +8,7 @@ html, body {
 }
 
 /* Container to center the form */
-.user-login-container {
+.user-sign-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ html, body {
 }
 
 /* Form styling */
-.user-login-form {
+.user-sign-form {
   background-color: #fff;
   padding: 35px 30px;
   border-radius: 12px;
@@ -29,21 +29,21 @@ html, body {
 }
 
 /* Form title */
-.user-login-form h2 {
+.user-sign-form h2 {
   text-align: center;
   margin-bottom: 25px;
   color: #203a43;
 }
 
 /* Labels */
-.user-login-form label {
+.user-sign-form label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #555;
 }
 
 /* Inputs */
-.user-login-form input {
+.user-sign-form input {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -53,28 +53,13 @@ html, body {
   transition: 0.3s;
 }
 
-.user-login-form input:focus {
+.user-sign-form input:focus {
   border-color: #203a43;
   box-shadow: 0 0 5px rgba(32, 58, 67, 0.5);
 }
 
-/* Remember Me checkbox */
-.remember-me {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.remember-me input {
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
 /* Button */
-.user-login-form button {
+.user-sign-form button {
   padding: 12px;
   background-color: #203a43;
   color: #fff;
@@ -85,12 +70,12 @@ html, body {
   transition: 0.3s;
 }
 
-.user-login-form button:hover {
+.user-sign-form button:hover {
   background-color: #0f2027;
 }
 
-/* Link to registration page */
-.user-login-form a {
+/* Link to login page */
+.user-sign-form a {
   margin-top: 15px;
   text-align: center;
   color: #203a43;
@@ -98,12 +83,12 @@ html, body {
   font-size: 14px;
 }
 
-.user-login-form a:hover {
+.user-sign-form a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 400px) {
-  .user-login-form {
+  .user-sign-form {
     width: 90%;
     padding: 30px 20px;
   }

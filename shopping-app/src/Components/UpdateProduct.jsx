@@ -1,58 +1,55 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { toast } from 'react-toastify';
-import '../Styles/AddProducts.css';
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 
-function AddProducts() {
-  const [product, setProduct] = useState({
-    pr_name: "",
-    pr_category: "",
-    pr_brand: "",
-    pr_price: "",
-    pr_desc: "",
-    pr_imageurl: "",
-    pr_stock: "",
-    pr_rating: "",
-  });
+function UpdateProduct() {
 
-  // 🔹 Handle Input Changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setProduct((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  // 🔹 Handle Form Submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    axios.post("http://localhost:1500/products", product)
-      .then((res) => {
-        toast.success("✅ Product added successfully!");
-        console.log(res.data);
-        // Clear form after adding
-        setProduct({
-          pr_name: "",
-          pr_category: "",
-          pr_brand: "",
-          pr_price: "",
-          pr_desc: "",
-          pr_imageurl: "",
-          pr_stock: "",
-          pr_rating: "",
-        });
-      })
-      .catch((err) => {
-        console.error(err);
-        toast.error("❌ Failed to add product. Check the input details!");
+    const [product, setProduct] = useState({
+        pr_name: "",
+        pr_category: "",
+        pr_brand: "",
+        pr_price: "",
+        pr_desc: "",
+        pr_imageurl: "",
+        pr_stock: "",
+        pr_rating: "",
       });
-  };
+    
+      // 🔹 Handle Input Changes
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setProduct((prev) => ({
+          ...prev,
+          [name]: value,
+        }));
+      };
 
-  // creating dropdown meunu for  product Category 
+      let param = useParams()
+      console.log(param.id)
 
-  let pr_category = [
+      useEffect(()=>{
+        axios.get(`http://localhost:1000/Products/${param.id}`)
+        .then((res)=>{
+            console.log(res.data);
+            setProduct(res.data)
+        })
+        .catch((err) =>{
+            console.log(err)
+        })
+      },[])
+
+      function update_item(e){
+        e.preventDefault();
+        axios.put(`http://localhost:1000/Products/${param.id}`, products)
+        .then((res) =>{
+            toast.success("Data Updated Successfully")
+        })
+        .catch((err) =>{
+            toast.error("Invalid Updation")
+        })
+      }
+
+      let pr_category = [
     "Electronics",
     "Fashion",
     "Home Appliances",
@@ -75,12 +72,9 @@ function AddProducts() {
   "Lego"            // Toys & Games
 ]
 
-
-
   return (
-    <div className="add-products">
-      <h2>Add New Product</h2>
-      <form onSubmit={handleSubmit}>
+    <div className='UpdateProduct'>
+      <form onSubmit={update_item}>
         <label>Product Name:</label>
         <input
           type="text"
@@ -105,6 +99,7 @@ function AddProducts() {
             )
           })
         }
+        
         </select>
 
 
@@ -190,7 +185,7 @@ function AddProducts() {
           name="pr_rating"
           value={product.pr_rating}
           onChange={handleChange}
-          placeholder="Enter rating (1-5)"
+          placeholder="Enter rating (1–5)"
           min="1"
           max="5"
           required
@@ -199,7 +194,7 @@ function AddProducts() {
         <button type="submit">Add Product</button>
       </form>
     </div>
-  );
+  )
 }
 
-export default AddProducts;
+export default UpdateProduct

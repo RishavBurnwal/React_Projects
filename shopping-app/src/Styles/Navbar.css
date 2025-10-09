@@ -1,47 +1,115 @@
-.Navbar {
-  display: flex;
-  justify-content: space-between; /* space between logo, search, profile */
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333; /* dark background */
-  color: white;
+/* General Navbar Styles */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
 }
 
-/* Logo */
-.Navbar .logo h1 {
-  margin: 0;
-  font-size: 24px;
+/* Brand Logo */
+.brand-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
-.Navbar .logo span {
-  color: #ff9800; /* highlight */
+.brand-logo span {
+  color: #ffc107;
 }
 
-/* Search section */
-.Navbar .search {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.Navbar .search input {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Links */
-.Navbar a {
-  text-decoration: none;
-  color: white;
+/* Nav Links */
+.nav-link-item {
+  color: white !important;
   font-weight: 500;
+  margin-right: 1rem;
+  transition: 0.3s ease;
 }
 
-.Navbar a:hover {
-  color: #ff9800;
+.nav-link-item:hover {
+  color: #ffca2c !important;
 }
 
-/* Profile section */
-.Navbar .Profile {
-  margin-left: 20px;
+/* Search Bar */
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchbar input {
+  flex: 1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.search-btn {
+  background: #ffca2c;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #ffc107;
+}
+
+/* Add Products Button */
+.add-product-btn {
+  background: #7e0909;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 6px 15px;
+  margin-left: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.add-product-btn:hover {
+  background: #0a5eb1;
+}
+
+/* Profile Dropdown */
+.profile-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+.profile-dropdown .dropdown-menu {
+  border-radius: 10px;
+  min-width: 180px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .searchbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .searchbar input {
+    width: 100%;
+  }
+
+  .add-product-btn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link-item {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 }

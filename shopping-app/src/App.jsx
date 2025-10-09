@@ -1,30 +1,32 @@
-import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import LandingPage from './Components/LandingPage'
-import AdminLogin from './Components/AdminLogin'
-import UserLogin from './Components/UserLogin'
-import {ToastContainer} from 'react-toastify'
-import AdminSign from './Components/AdminSign'
-import AdminHomePage from './Components/AdminHomePage'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ErrorPage from './Components/ErrorPage.jsx'
+// import "./App.css"
+import AdminLogin from "./components/AdminLogin";
+import AdminSign from "./components/AdminSign";
+import AdminHomePage from "./components/AdminHomePage";
+import LandingPage from "./components/LandingPase"; 
+import UserLogin from './components/UserLogin';
+import UserSign from "./components/UserSign";
+import ErrorPage from "./components/ErrorPage";   // ✅ Add this line
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css'; // importing bootstrap
 
 function App() {
-  return (
+  return (   
     <div className="App">
       <BrowserRouter>
-      <Routes>
-        <Route path='/*' element={<ErrorPage/>}/>
-        <Route path='/' element={<LandingPage/>} />
-        <Route path='/admin-login' element={<AdminLogin/>} />
-        <Route path='/user-login' element={<UserLogin/>} />
-        <Route path='/admin-sign' element={<AdminSign/>}/>
-        <Route path='/admin-homepage/*' element={<AdminHomePage/>}/>
-      </Routes>
-      <ToastContainer/>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/*" element={<ErrorPage />} />   {/ ✅ 404 fallback */}
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/user-login" element={<UserLogin />} />
+          <Route path="/admin-sign" element={<AdminSign />} />
+          <Route path="/user-sign" element={<UserSign />} />
+          <Route path="/admin-HomePage/*" element={<AdminHomePage />} />
+        </Routes>
+        <ToastContainer/>
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

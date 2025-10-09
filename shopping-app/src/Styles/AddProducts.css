@@ -1,27 +1,54 @@
 .add-products {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  background: #f4f6f9;
-  font-family: Arial, sans-serif;
+  width: 450px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.add-products .details {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 350px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.add-products h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
 .add-products form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-.add-products input {
-  padding: 6px 8px;
+.add-products label {
+  font-weight: bold;
+  color: #333;
+}
+
+.add-products input,
+.add-products textarea {
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.add-products input:focus,
+.add-products textarea:focus {
+  border-color: #007bff;
+}
+
+.add-products button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-products button:hover {
+  background-color: #0056b3;
 }

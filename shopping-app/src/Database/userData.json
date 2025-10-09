@@ -1,0 +1,12 @@
+{
+  "Users": [
+    {
+      "id": "d839",
+      "name": "karmakar",
+      "email": "sayan@gaial.com",
+      "phone": "12345678654",
+      "password": "1234",
+      "re_password": "1234"
+    }
+  ]
+}

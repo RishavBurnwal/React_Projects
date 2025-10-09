@@ -1,86 +1,125 @@
-.AdminLogin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* full screen center */
-  /* background: linear-gradient(135deg, #74ebd5, #9face6); */
-  font-family: Arial, sans-serif;
-}
-
-.AdminLogin form {
-  background: #fff;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-}
-
-.AdminLogin form label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #333;
-}
-
-.AdminLogin form input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  transition: 0.3s ease;
-}
-
-.AdminLogin form input:focus {
-  border-color: #6c63ff;
-  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
-}
-
-.AdminLogin form button {
-  margin-top: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #6c63ff;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.AdminLogin form button:hover {
-  background: #4b46d6;
-}
-
-.AdminLogin form a {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
-  text-decoration: none;
-  color: #6c63ff;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.AdminLogin form a:hover {
-  color: #4b46d6;
-  text-decoration: underline;
-}
-
-/* Ensure full height */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fullscreen gradient background */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
 
-/* ... rest of your existing .AdminLogin styles */
+/* Login Card */
+.admin-login-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.8s ease;
+}
 
-/* Make AdminSign take full width */
-.AdminLogin {
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form title */
+.admin-login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #203a43;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Labels */
+.admin-login-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Inputs */
+.admin-login-form input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.admin-login-form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74,144,226,0.4);
+}
+
+/* Button */
+.admin-login-form button {
+  padding: 12px;
+  background: linear-gradient(135deg, #203a43, #2c5364);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-login-form button:hover {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  transform: translateY(-2px);
+}
+
+/* Remember Me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 18px 0;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: #203a43; /* modern browsers */
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* Register Link */
+.admin-login-form a {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #203a43;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.admin-login-form a:hover {
+  color: #0f2027;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .admin-login-form {
+    width: 90%;
+    padding: 30px 20px;
+  }
 }

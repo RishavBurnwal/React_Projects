@@ -1,82 +1,92 @@
+/* AdminSign.css */
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #e0f2ff, #f5faff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container (Card) */
 .AdminSign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #f6d365, #fda085);
-  font-family: Arial, sans-serif;
+  max-width: 360px;           /* smaller card size */
+  margin: 60px auto;
+  padding: 50px;
+  padding-right: 75px;
+  background: #ffffff;        /* card background */
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.AdminSign form {
-  background: #fff;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+.AdminSign:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-.AdminSign form label {
-  margin: 12px 0 6px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #333;
+/* Heading */
+.AdminSign h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 18px;
+  font-weight: 600;
 }
 
-.AdminSign form input {
-  padding: 10px;
+/* Thumbnail (Profile Icon) */
+.AdminSign .thumbnail {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 18px auto;
+  border-radius: 50%;
+  background: #f1f1f1 url("https://cdn-icons-png.flaticon.com/512/149/149071.png") center/60% no-repeat;
+  border: 2px solid #4a90e2;
+  box-shadow: 0 3px 6px rgba(74, 144, 226, 0.2);
+}
+
+/* Labels */
+.AdminSign label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Input Fields */
+.AdminSign input {
+  width: 100%;
+  padding: 9px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
-  transition: 0.3s ease;
   font-size: 14px;
+  background: #fafafa;
+  transition: border 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.AdminSign form input:focus {
-  border-color: #ff7b54;
-  box-shadow: 0 0 6px rgba(255, 123, 84, 0.4);
+.AdminSign input:focus {
+  border-color: #4a90e2;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.25);
 }
 
-.AdminSign form button {
+/* Button */
+.AdminSign button {
+  width: 100%;
   margin-top: 20px;
-  padding: 12px;
+  padding: 11px;
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
   border: none;
   border-radius: 8px;
-  background: #ff7b54;
-  color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.AdminSign form button:hover {
-  background: #e06743;
-}
-
-.thumbnail {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.thumbnail img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ff7b54;
-}
-
-/* Make sure html and body take full height and remove default margins */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Make AdminSign take full width */
-.AdminSign {
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+.AdminSign button:hover {
+  background: linear-gradient(135deg, #357ab8, #2d6ca2);
+  transform: translateY(-2px);
 }

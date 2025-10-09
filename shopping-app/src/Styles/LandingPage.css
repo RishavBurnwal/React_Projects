@@ -1,47 +1,54 @@
- .LandingPage {
+/* ===== Landing Page (Glassmorphism Style) ===== */
+.LandingPage {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;                 /* space between admin/user cards */
-  min-height: 100vh;         /* full screen height */
-  background: linear-gradient(135deg, #4a90e2, #0077b6);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 50px; /* space between admin and user links */
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(80, 0, 200, 0.8), rgba(0, 120, 255, 0.7));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
-/* Each Link styled like a card */
+/* ===== Card Links ===== */
 .LandingPage a {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  width: 220px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Hover effect */
 .LandingPage a:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.25);
 }
 
-/* Images inside cards */
+/* ===== Images ===== */
 .LandingPage img {
-  width: 100%;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 12px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Headings */
+/* ===== Text ===== */
 .LandingPage h1 {
   font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-  text-align: center;
+  margin-top: 5px;
+  color: #fff;
+  letter-spacing: 0.5px;
 }

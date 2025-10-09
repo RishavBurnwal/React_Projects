@@ -1,0 +1,110 @@
+/* ===== View Product Page ===== */
+.view-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+
+  /* Matching Dashboard background */
+  background: radial-gradient(circle at 20% 30%, #160be3, transparent 40%),
+              radial-gradient(circle at 80% 70%, #4a04e0, transparent 40%),
+              linear-gradient(135deg, #1e3a8a, #4200bd 60%, #02ffa6);
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* ===== Glassmorphism Product Card ===== */
+.view-product-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.view-product-card img {
+  width: 60%;
+  max-width: 300px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.view-product-details {
+  text-align: left;
+  width: 100%;
+  line-height: 1.8;
+  color: #f0f0f0;
+}
+
+.view-product-details h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.view-product-details p {
+  font-size: 1rem;
+  color: #e2e8f0;
+  margin: 8px 0;
+}
+
+.view-product-details strong {
+  color: #ffffff;
+}
+
+/* ===== Buttons ===== */
+.view-product-actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.view-product-actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.view-product-actions .edit-btn {
+  background: rgba(0, 102, 255, 0.6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.view-product-actions .edit-btn:hover {
+  background: rgba(15, 43, 85, 0.8);
+}
+
+.view-product-actions .delete-btn {
+  background: rgb(255, 0, 25);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.view-product-actions .delete-btn:hover {
+  background: rgba(247, 3, 28, 0.8);
+}

@@ -1,0 +1,125 @@
+{
+  "products": [
+      {
+    "id": "2764",
+    "pr_name": "Samsung galaxyS24ultra ",
+    "pr_category": "Mobiles & Accessories",
+    "pr_brand": "Samsung",
+    "pr_price": "75749",
+    "pr_desc": "Samsung Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery",
+    "pr_imageurl": "https://m.media-amazon.com/images/I/717Q2swzhBL._SX679_.jpg",
+    "pr_stock": "100",
+    "pr_Rating": "3"
+  },
+    {
+      "id": "c8f9",
+      "pr_name": "Razer deathAddermouse",
+      "pr_category": "Laptops & Computers",
+      "pr_brand": "JBL",
+      "pr_price": "15000",
+      "pr_desc": " Razer DeathAdder V4 Pro Gaming Mouse (Model No: RZ01-05330100-R3A1) | 56 g Wireless Esports Mouse | Focus Pro 45K Optical Sensor | 8,000 Hz HyperSpeed",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/71j6PDIwegL._SL1500_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "1051",
+      "pr_name": "Samsung crytsal vista",
+      "pr_category": "Electronics",
+      "pr_brand": "Samsung",
+      "pr_price": "25490",
+      "pr_desc": "Samsung 108 cm (43 inches) Crystal 4K Vista Ultra HD Smart LED TV UA43UE81AFULXL",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/511wYUr722L._SX300_SY300_QL70_FMwebp_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "54c7",
+      "pr_name": "iphone16 128gb",
+      "pr_category": "Mobiles & Accessories",
+      "pr_brand": "Apple",
+      "pr_price": "25490",
+      "pr_desc": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White Click to see full view iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/61d88xzrklL._AC_UL480_FMwebp_QL65_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "2977",
+      "pr_name": "sony alpha",
+      "pr_category": "Mobiles & Accessories",
+      "pr_brand": "Sony",
+      "pr_price": "133498",
+      "pr_desc": "Sony Alpha 7M3K Full-Frame Camera (28-70mm Zoom Lens) | 24.2 MP | 4K Full Frame | Real-Time Eye Auto Focus | Tiltable LCD, Low Light Camera - Black",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/311ulWjXI1L._SY300_SX300_QL70_FMwebp_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "df71",
+      "pr_name": "skillmatic sizzle",
+      "pr_category": "Toys & Games",
+      "pr_brand": "Nike",
+      "pr_price": "674",
+      "pr_desc": "Skillmatics Sizzle - Classic Magnetic Attraction Game, Strategy & Travel Game, Magnetic Games, Fun for Family Game Nights, Gifts for Teens & Adults Ages 15+, 2-4 Players",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/519wA8TyiqL._SY300_SX300_QL70_FMwebp_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "09ed",
+      "pr_name": "mirana moonlightwalker",
+      "pr_category": "Toys & Games",
+      "pr_brand": "H&M",
+      "pr_price": "1499",
+      "pr_desc": "Mirana Moonwalker | Smart Interactive Chat-GPT AI Robot Toy for Kids | USB Rechargeable Type-C | AR Games & In-Built Bluetooth Speaker | Remote & App Controlled | Gift for Boys & Girls 2+ Years (Grey)",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/414GbXdrVbL._SY300_SX300_QL70_FMwebp_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "4"
+    },
+    {
+      "id": "63ad",
+      "pr_name": "boldfit shoes",
+      "pr_category": "Sports & Fitness",
+      "pr_brand": "Puma",
+      "pr_price": "1099",
+      "pr_desc": "Boldfit Shoes for Man Stylish Running Shoes for Man Soft Cushion Lace Up Shoe for Men Stylish Regular Wear Walking Footwear Light Weight Sports Shoe for Men Running All Day Walking Footwear",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/618q543WyWL._AC_UL480_FMwebp_QL65_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "5"
+    },
+    {
+      "id": "268e",
+      "pr_name": "yonex racket",
+      "pr_category": "Sports & Fitness",
+      "pr_brand": "Adidas",
+      "pr_price": "575",
+      "pr_desc": "Yonex ZR 100 Light Aluminium Badminton Racquet with Full Cover | Made in India Dark Charcoal",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/516NF6+4T+L.AC_UL480_FMwebp_QL65.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "5"
+    },
+    {
+      "id": "d11f",
+      "pr_name": "tennis balls",
+      "pr_category": "Sports & Fitness",
+      "pr_brand": "Adidas",
+      "pr_price": "399",
+      "pr_desc": "K R Sports Tennis Cricket Balls, Heavy Weight, High Bounce, Fluorescent Green, Pack of 12",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/61DNNgzdHDL.AC_UL480_FMwebp_QL65.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "5"
+    },
+    {
+      "id": "c90e",
+      "pr_name": "golf kit",
+      "pr_category": "Sports & Fitness",
+      "pr_brand": "Adidas",
+      "pr_price": "2099",
+      "pr_desc": "PLAYNXT Outdoor Toys, Golf Set For Kids, Indoor Outdoor Games For Kids, Gifts For 6 Year Olds - The Homemade Plastic Golfer Set, Multicolor",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/41Zjk8kzK7L.SY300_SX300_QL70_FMwebp.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "5"
+    }
+  ]
+}
