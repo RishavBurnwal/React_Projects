@@ -1,6 +1,17 @@
 import React, {useReducer} from 'react'
 
+function reducer(manager,action) {
 
+  switch(action.type){
+    case "AddTask":
+      return{
+        id : "001",
+        name : "Rishav",
+        task : manager.task + 1
+      }
+      
+  }
+}
 function App(){
 
   let [manager,dispatch] = useReducer(reducer,{
