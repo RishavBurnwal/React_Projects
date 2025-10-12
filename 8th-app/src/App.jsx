@@ -9,7 +9,18 @@ function reducer(manager,action) {
         name : "Rishav",
         task : manager.task + 1
       }
-      
+      case "RemoveTask":
+      return{
+        id : "001",
+        name : "Buddy",
+        task : manager.task - 1
+      }
+      case "Reset":
+      return{
+        id : "001",
+        name : "Prince",
+        task : 0
+      }
   }
 }
 function App(){
