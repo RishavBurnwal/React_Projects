@@ -1,0 +1,35 @@
+{
+    "product":[
+        {
+            "Pname": "Iphone",
+            "url": "https://www.apple.com/in/iphone/",
+            "rating": 4.4
+        },
+        {
+            "Pname": "Shirt",
+            "url": "https://www.myntra.com/shirts/mast+%26+harbour/mast--harbour-men-cotton-striped-casual-shirt/24752004/buy",
+            "rating": 4.2
+        },
+        {
+            "Pname": "Perfume",
+            "url": "https://www.myntra.com/perfume/envy/envy-men-natural-spray-eau-de-parfum-30-ml/4374563/buy?storeContext=fwd",
+            "rating": 3.8
+        },
+        {
+            "Pname": "Jeans",
+            "url": "https://www.myntra.com/jeans/the+indian+garage+co/the-indian-garage-co-men-black-slim-fit-light-fade-stretchable-jeans/16514748/buy",
+            "rating": 4.1
+        },
+        {
+            "Pname": "Watch",
+            "url": "https://www.flipkart.com/fastrack-68011pp08-tees-analog-watch-men/p/itma8a59cfd736d5?pid=WATFQPEEH8BDUNHW&lid=LSTWATFQPEEH8BDUNHW6YBFE9&marketplace=FLIPKART&cmpid=content_watch_8965229628_gmc",
+            "rating": 4.5
+        },
+        {
+            "Pname": "Chair",
+            "url": "amazon.in/CELLBELL-C190-Berlin-Office-Ergonomic/dp/B0CRVNPS3Y?source=ps-sl-shoppingads-lpcontext&psc=1&smid=AXOGFIT0PZZ7G",
+            "rating": 4.2
+        }
+        
+    ]
+}

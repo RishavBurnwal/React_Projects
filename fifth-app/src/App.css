@@ -1,0 +1,21 @@
+body{
+  background-color: rgb(169, 155, 155);
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  color: rgb(13, 21, 18);
+  background-color: greenyellow;
+}
+.buttons{
+  border: 4px solid rgb(228, 160, 160);
+  padding: 20px ;
+  background-color: rgb(226, 226, 226);
+}
+.buttons h1{
+  border: 1px solid green;
+  padding: 10px;
+  background-color: green(173, 96, 170);
+}
