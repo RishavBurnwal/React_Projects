@@ -7,6 +7,12 @@ function App() {
   let [name, setName] = useState("");
   console.log(name);
 
+  let PerformExpensiveCalc = useMemo(() =>{
+    for(let i=0; i<10000; i++){
+      console.log(i);
+    }
+    return count + 1;
+  }, [count])
   
   
   return (
