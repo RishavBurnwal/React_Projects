@@ -1,16 +1,16 @@
 {
   "products": [
-      {
-    "id": "2764",
-    "pr_name": "Samsung galaxyS24ultra ",
-    "pr_category": "Mobiles & Accessories",
-    "pr_brand": "Samsung",
-    "pr_price": "75749",
-    "pr_desc": "Samsung Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery",
-    "pr_imageurl": "https://m.media-amazon.com/images/I/717Q2swzhBL._SX679_.jpg",
-    "pr_stock": "100",
-    "pr_Rating": "3"
-  },
+    {
+      "id": "2764",
+      "pr_name": "Samsung galaxyS24ultra ",
+      "pr_category": "Mobiles & Accessories",
+      "pr_brand": "Samsung",
+      "pr_price": "75749",
+      "pr_desc": "Samsung Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/717Q2swzhBL._SX679_.jpg",
+      "pr_stock": "100",
+      "pr_Rating": "3"
+    },
     {
       "id": "c8f9",
       "pr_name": "Razer deathAddermouse",
@@ -34,17 +34,6 @@
       "pr_Rating": "4"
     },
     {
-      "id": "54c7",
-      "pr_name": "iphone16 128gb",
-      "pr_category": "Mobiles & Accessories",
-      "pr_brand": "Apple",
-      "pr_price": "25490",
-      "pr_desc": "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White Click to see full view iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White",
-      "pr_imageurl": "https://m.media-amazon.com/images/I/61d88xzrklL._AC_UL480_FMwebp_QL65_.jpg",
-      "pr_stock": "100",
-      "pr_Rating": "4"
-    },
-    {
       "id": "2977",
       "pr_name": "sony alpha",
       "pr_category": "Mobiles & Accessories",
@@ -57,14 +46,15 @@
     },
     {
       "id": "df71",
-      "pr_name": "skillmatic sizzle",
+      "pr_name": "skillmatic ",
       "pr_category": "Toys & Games",
       "pr_brand": "Nike",
-      "pr_price": "674",
+      "pr_price": "652",
       "pr_desc": "Skillmatics Sizzle - Classic Magnetic Attraction Game, Strategy & Travel Game, Magnetic Games, Fun for Family Game Nights, Gifts for Teens & Adults Ages 15+, 2-4 Players",
       "pr_imageurl": "https://m.media-amazon.com/images/I/519wA8TyiqL._SY300_SX300_QL70_FMwebp_.jpg",
       "pr_stock": "100",
-      "pr_Rating": "4"
+      "pr_Rating": "4",
+      "pr_rating": "4"
     },
     {
       "id": "09ed",
@@ -120,6 +110,28 @@
       "pr_imageurl": "https://m.media-amazon.com/images/I/41Zjk8kzK7L.SY300_SX300_QL70_FMwebp.jpg",
       "pr_stock": "100",
       "pr_Rating": "5"
+    },
+    {
+      "id": "6f1d",
+      "pr_name": "iphone 16 pro",
+      "pr_category": "",
+      "pr_brand": "",
+      "pr_price": "145999.0",
+      "pr_desc": "slick design woith new color",
+      "pr_imageurl": "https://m.media-amazon.com/images/I/61zwK7mmLtL._UF1000,1000_QL80_.jpg",
+      "pr_stock": "100",
+      "pr_rating": "3"
+    },
+    {
+      "id": "4876",
+      "pr_name": "tv",
+      "pr_category": "Home Appliances",
+      "pr_brand": "Whirlpool",
+      "pr_price": "35000",
+      "pr_desc": "splendid  display",
+      "pr_imageurl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch_GEO_EMEA_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4K0VvSjFQM0pLN0VsK2pmbVJmK1hUZDhiZjRKRUJ6ZU96N3VHVCtXdS9WdVUzdWN4ZENIZEJCc01VOW1QK3BzTGVNdlIyKy9FMURXQmRzdk1KZVhnSDh1WjFlQndWT3ZmeW5zc3dRUHliS2dB&traceId=1",
+      "pr_stock": "200",
+      "pr_rating": "3"
     }
   ]
 }

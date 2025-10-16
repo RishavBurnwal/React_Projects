@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 function UpdateProduct() {
 
@@ -28,7 +30,7 @@ function UpdateProduct() {
       console.log(param.id)
 
       useEffect(()=>{
-        axios.get(`http://localhost:1000/Products/${param.id}`)
+        axios.get(`http://localhost:1000/products/${param.id}`)
         .then((res)=>{
             console.log(res.data);
             setProduct(res.data)
@@ -40,7 +42,7 @@ function UpdateProduct() {
 
       function update_item(e){
         e.preventDefault();
-        axios.put(`http://localhost:1000/Products/${param.id}`, products)
+        axios.put(`http://localhost:1000/products/${param.id}`, product)
         .then((res) =>{
             toast.success("Data Updated Successfully")
         })
@@ -191,7 +193,7 @@ function UpdateProduct() {
           required
         />
 
-        <button type="submit">Add Product</button>
+        <button type="submit">Update Product</button>
       </form>
     </div>
   )

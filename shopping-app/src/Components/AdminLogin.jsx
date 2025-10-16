@@ -11,7 +11,7 @@ function AdminLogin() {
     const [admins, setAdmin] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:1000/Admins")
+        axios.get("http://localhost:1200/Admins")
             .then((res) => {
                 console.log(res.data);
                 setAdmin(res.data);

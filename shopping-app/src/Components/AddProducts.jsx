@@ -28,7 +28,7 @@ function AddProducts() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("http://localhost:1500/products", product)
+    axios.post("http://localhost:1000/products", product)
       .then((res) => {
         toast.success("✅ Product added successfully!");
         console.log(res.data);

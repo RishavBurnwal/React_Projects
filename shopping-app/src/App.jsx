@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/*" element={<ErrorPage />} />   {/ ✅ 404 fallback */}
+          <Route path="/*" element={<ErrorPage />} />   
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/user-login" element={<UserLogin />} />
           <Route path="/admin-sign" element={<AdminSign />} />

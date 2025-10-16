@@ -12,7 +12,7 @@ function Dashboard() {
   // Fetch products from server when component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:1500/products") // Your products JSON server endpoint
+      .get("http://localhost:1000/products") // Your products JSON server endpoint
       .then((res) => {
         setProducts(res.data);
       })
@@ -24,7 +24,7 @@ function Dashboard() {
 
   function remove_item(id, pr_name) {
     axios
-      .delete(`http://localhost:1500/products/${id}`)
+      .delete(`http://localhost:1000/products/${id}`)
       .then((res) => {
         console.log(res);
         toast.success(`${pr_name} has been Deleted `);
@@ -69,7 +69,7 @@ function Dashboard() {
                 className="product-image"
               />
               <h3>
-                <Link
+                <Link 
                   state={product}
                   to={`/admin-home/viewProducts/${product.id}`}
                   className="landing-link"
