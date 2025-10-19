@@ -79,7 +79,6 @@ function Dashboard() {
                 </Link>
               </h3>
               <h2>hey</h2>
-              <h3>hejbhwj</h3>
               <p>
                 <strong>Category:</strong> {product.pr_category}
               </p>
